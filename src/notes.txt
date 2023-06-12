@@ -1,0 +1,17 @@
+//02-03-2023
+React router 
+Context
+
+03-03-23
+//useRef
+//useMemo
+
+
+//04-03-23
+
+//reducer
+//useCallback
+
+
+//redux
+//custom hook
