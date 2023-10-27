@@ -32,6 +32,9 @@ const Home = () => {
           <li>
             <Link to="/redux">redux</Link>
           </li>
+          <li>
+            <Link to="/hoc">Higher Order Component</Link>
+          </li>
         </ul>
       </nav>
     </div>

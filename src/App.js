@@ -10,7 +10,8 @@ import UseMemo from "./useMemo/UseMemo";
 import UseReducer from "./useReducer/UseReducer";
 import UseCallBack from "./useCallback/UseCallBack";
 import Redux from "./Redux/Redux";
-
+import Hoc from './HOC/Hoc'
+import  './index.css'
 function App() {
   return (
     <div className="App">
@@ -26,9 +27,11 @@ function App() {
           <Route exact path="/useReducer" element={<UseReducer/>} />
           <Route exact path="/useCallback" element={<UseCallBack/>} />
           <Route exact path="/redux" element={<Redux/>} />
+          <Route exact path="/hoc" element={<Hoc/>} />
         </Routes>
       </BrowserRouter>
       </ContextState>
+
     </div>
   );
 }

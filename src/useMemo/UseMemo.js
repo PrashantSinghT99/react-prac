@@ -9,16 +9,12 @@ const UseMemo = () => {
     for (let i = 0; i < 1000000000; i++) {}
     return num;
   };
-
-  // const calculation = useMemo(() => {
-  //   expensiveCalculation(count);
-  // }, [count]);
-// expensiveCalculation(count)
-
   const calculation=useMemo(()=>
   {
     expensiveCalculation(count)
   },[count])
+
+  // expensiveCalculation(count)
 
   const onclick = () => {
     setCount((prevCount) => prevCount + 1);

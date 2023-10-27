@@ -9,11 +9,11 @@ const UseContextForState = () => {
     a.updatestate()
   }, [])
 
-  const styling={
-    color:"red"
-  }
+  // const styling={
+  //   color:"red"
+  // }
   return (
-    <div style={styling}>
+    <div >
       {a.state.name} {a.state.age}
     </div>
   )

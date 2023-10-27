@@ -1,13 +1,9 @@
 import { createContext } from "react";
 
-const myContext=createContext();
+const myContext = createContext();
 
-
-myContext.displayName="myContext";
+myContext.displayName = "myContext";
 
 export default myContext;
-
-
-
 
 

@@ -13,13 +13,13 @@ const UseCallBack = () => {
   }
 
 
-//   const getItems=()=>
-//   {
-//     return [number,number+1,number+2];
-//   }
+  // const getItems=()=>
+  // {
+  //   return [Number(number),Number(number)+1,Number(number)+2];
+  // }
   const getItems=useCallback(()=>
   {
-    return [number,number+1,number+2];
+    return [Number(number),Number(number)+1,Number(number)+2];
   },[number])
  
 

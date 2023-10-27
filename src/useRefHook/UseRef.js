@@ -47,44 +47,52 @@
 
 //use to track prev State
 
-import React, { useState, useEffect, useRef } from 'react'
+// import React, { useState, useEffect, useRef } from 'react'
 
-const UseRef = () => {
-  const [name, setName] = useState('');
-  // const count=useRef(0);
-//  const inputRef=useRef();
+// const UseRef = () => {
+//   const [name, setName] = useState('');
 
-const prevName=useRef();
+//   const prevName = useRef();
 
 
-  useEffect(() => {
-    // setCount((prevCount) => prevCount + 1);
+//   useEffect(() => {
+//     prevName.current = name;
 
-    // count.current=count.current+1;
+//   }, [name]);
 
-  prevName.current=name;
-    
-  },[name]);
+//   const handleChange = (e) => {
+//     setName(e.target.value);
+//   };
 
-  const handleChange = (e) => {
-    setName(e.target.value);
+//   return (
+//     <div>
+//       <input type="text" onChange={handleChange} value={name} />
+//       <p>Hi my name {name} and previous state {prevName.current}</p>
+//     </div>
+//   );
+// };
+
+// export default UseRef;
+
+
+import React, { useRef } from 'react';
+
+function UseRef() {
+  // Create a ref to hold the input element
+  const inputRef = useRef(null);
+
+  // Function to handle a button click
+  const handleButtonClick = () => {
+    // Focus on the input element using the ref
+    inputRef.current.focus();
   };
-
-  // const handleButton=(e)=>
-  // {
-  //   inputRef.current.focus();
-
-  // }
 
   return (
     <div>
-      <input type="text" onChange={handleChange} value={name} />
-      <p>Hi my name {name} and previous state {prevName.current}</p>
-      {/* <p>The render count is: {count.current}</p> */}
-
-      {/* <button onClick={handleButton}>FOCUS</button> */}
+      <input type="text" ref={inputRef} />
+      <button onClick={handleButtonClick}>Focus Input</button>
     </div>
   );
-};
+}
 
 export default UseRef;
